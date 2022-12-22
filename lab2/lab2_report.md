@@ -58,7 +58,10 @@ spec:
     app: lab2       
 ```
 
-И конфиг мэп
+Без подачи переменных мы видим следующее
+![Image alt](https://github.com/username0159/2022_2023-introduction_to_distributed_technologies-k4111c-spiridonov_n_a/blob/main/lab2/lab2-1.jpg)
+
+Конфиг мэп
 ```
 apiVersion: v1
 kind: ConfigMap
@@ -69,8 +72,8 @@ data:
     REACT_APP_COMPANY_NAME: and my company name
 ```
 
-Смотрим что получилось
+Смотрим что изменилось
 ```
 minikube service serv-lab2
 ```
-![Image alt](https://github.com/username0159/raw/blob/main/voult.jpg)
+![Image alt](https://github.com/username0159/2022_2023-introduction_to_distributed_technologies-k4111c-spiridonov_n_a/blob/main/lab2/lab2-2.jpg)
