@@ -59,7 +59,22 @@ spec:
 ```
 
 Без подачи переменных мы видим следующее
+```
+minikube service serv-lab2
+```
 ![Image alt](https://github.com/username0159/2022_2023-introduction_to_distributed_technologies-k4111c-spiridonov_n_a/blob/main/lab2/lab2-1.jpg)
+
+Посмотрим логи
+```
+kubectl logs <имя пода>
+```
+
+Для обоих портов мы увидим следующее
+```
+Builing frontend
+build finished
+Server started on port 3000
+```
 
 Конфиг мэп. Он нужен нам для задания переменных
 ```
