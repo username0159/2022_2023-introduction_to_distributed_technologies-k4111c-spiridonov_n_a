@@ -6,7 +6,10 @@
 ### Date of create: 20.09.2022
 ### Date of finished:
 ---
-Разворачиваем следующий деплоймент
+
+Предварительно по инструкции мы установили докер.
+
+Далее пишем следующий манифест с помощью которого мы развернем наш деплоймент с одним подом
 ```
 apiVersion: apps/v1
 kind: Deployment
@@ -31,18 +34,23 @@ spec:
         - containerPort: 8200
 ```
 
-Создаем сервис
+Создаем сервис доступа 
 ```
 minikube kubectl -- expose pod <èìÿ ïîäà> --type=NodePort --port=8200
 ```
 
-Прокидываем порт
+Прокидываем порт к контейнеру
 ```
 minikube kubectl -- port-forward service/<èìÿ ïîäà> 8200:8200
 ```
+По ссылке [http://localhost:8200](http://localhost:8200) обнаружим следующий интерфейс
+![Image alt](https://github.com/username0159/2022_2023-introduction_to_distributed_technologies-k4111c-spiridonov_n_a/blob/main/lab1/voult1.jpg)
 
-В логах ищем строчку root token и вводим в нужное поле
+Открываем логи
 ```
  kubectl logs -f <èìÿ ïîäà>
 ```
+Ищем строчку root token и вводим в нужное поле
 ![Image alt](https://github.com/username0159/raw/blob/main/voult.jpg)
+
+Готово
