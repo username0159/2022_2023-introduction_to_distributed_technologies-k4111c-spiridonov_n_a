@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm-lab2
+data:
+    REACT_APP_USERNAME: Hi, my nickname should be here
+    REACT_APP_COMPANY_NAME: and my company name
