@@ -93,4 +93,4 @@ minikube service serv-lab2
 ```
 ![Image alt](https://github.com/username0159/2022_2023-introduction_to_distributed_technologies-k4111c-spiridonov_n_a/blob/main/lab2/lab2-2.jpg)
 
-Теперь в поля username и company name мы видим то что было указано в config файле. Так же изменилось имя пода благодаря нашему Load Balancer'у
+Теперь в полях username и company name мы видим то, что было указано в config файле. Так же изменилось имя пода благодаря нашему Load Balancer'у.
