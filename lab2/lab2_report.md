@@ -6,7 +6,7 @@
 ### Date of create: 20.09.2022
 ### Date of finished:
 ---
-Разворачиваем следующий деплоймент
+Пишем манифест с помощью которого развернем наш деплоймент с 2 подами
 ```
 apiVersion: apps/v1
 kind: Deployment
@@ -42,7 +42,7 @@ spec:
                 key: REACT_APP_COMPANY_NAME
 ```
 
-Сервис
+Сервис Load Balancer который бедет контролировать трафик
 ```
 apiVersion: v1
 kind: Service              
@@ -61,7 +61,7 @@ spec:
 Без подачи переменных мы видим следующее
 ![Image alt](https://github.com/username0159/2022_2023-introduction_to_distributed_technologies-k4111c-spiridonov_n_a/blob/main/lab2/lab2-1.jpg)
 
-Конфиг мэп
+Конфиг мэп. Он нужен нам для задания переменных
 ```
 apiVersion: v1
 kind: ConfigMap
@@ -77,3 +77,5 @@ data:
 minikube service serv-lab2
 ```
 ![Image alt](https://github.com/username0159/2022_2023-introduction_to_distributed_technologies-k4111c-spiridonov_n_a/blob/main/lab2/lab2-2.jpg)
+
+Теперь в поля username и company name мы видим то что было указано в config файле. Так же изменилось имя пода благодаря нашему Load Balancer'у
