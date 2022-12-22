@@ -54,3 +54,7 @@ minikube kubectl -- port-forward service/<èìÿ ïîäà> 8200:8200
 ![Image alt](https://github.com/username0159/raw/blob/main/voult.jpg)
 
 Готово
+
+---
+
+![Image alt](https://github.com/username0159/2022_2023-introduction_to_distributed_technologies-k4111c-spiridonov_n_a/blob/main/l1..JPG)
