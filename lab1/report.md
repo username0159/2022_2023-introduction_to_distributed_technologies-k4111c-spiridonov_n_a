@@ -6,7 +6,7 @@
 ### Date of create: 20.09.2022
 ### Date of finished:
 ---
-Манифест для равзертывания пода
+Р Р°Р·РІРѕСЂР°С‡РёРІР°РµРј СЃР»РµРґСѓСЋС‰РёР№ РґРµРїР»РѕР№РјРµРЅС‚
 ```
 apiVersion: apps/v1
 kind: Deployment
@@ -31,18 +31,18 @@ spec:
         - containerPort: 8200
 ```
 
-Создаем сервис
+РЎРѕР·РґР°РµРј СЃРµСЂРІРёСЃ
 ```
-minikube kubectl -- expose pod <имя пода> --type=NodePort --port=8200
-```
-
-Прокидываем порт
-```
-minikube kubectl -- port-forward service/<имя пода> 8200:8200
+minikube kubectl -- expose pod <ГЁГ¬Гї ГЇГ®Г¤Г > --type=NodePort --port=8200
 ```
 
-Ищем в логах root token и вводим
+РџСЂРѕРєРёРґС‹РІР°РµРј РїРѕСЂС‚
 ```
- kubectl logs -f <имя пода>
+minikube kubectl -- port-forward service/<ГЁГ¬Гї ГЇГ®Г¤Г > 8200:8200
+```
+
+Р’ Р»РѕРіР°С… РёС‰РµРј СЃС‚СЂРѕС‡РєСѓ root token Рё РІРІРѕРґРёРј РІ РЅСѓР¶РЅРѕРµ РїРѕР»Рµ
+```
+ kubectl logs -f <ГЁГ¬Гї ГЇГ®Г¤Г >
 ```
 ![Image alt](https://github.com/username0159/raw/blob/main/voult.jpg)
